@@ -26,4 +26,8 @@ services:
     volumes:
       - ./data/mysql:/var/lib/mysql
 
+networks:
+  default: 
+    external: 
+      name: nginx-proxy-manager_default
 
