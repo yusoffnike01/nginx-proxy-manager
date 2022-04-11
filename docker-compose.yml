@@ -27,7 +27,7 @@ services:
       - ./data/mysql:/var/lib/mysql
 
   portainer:
-    image: portainer/portainer
+    image: portainer/portainer-ce:2.9.3
     privileged: true
     volumes:
       - './data:/data'
